@@ -1,0 +1,32 @@
+.menu {
+	position: absolute;
+	float: left;
+	height: 100%;
+	width: 300px;
+	background-color: #312d75 
+}
+
+.cross {
+	position: absolute;
+	display: inline-block;
+	top: 20px;
+	right: 40px;
+}
+
+.cross::after, .cross::before {
+	content: '';
+	position: absolute;
+	height: 5px;
+	width: 20px;
+	background-color: #2a2852;
+	border-radius: 5px;
+	
+}
+
+.cross::after {
+	transform: rotateZ(45deg);
+}
+
+.cross::before {
+	transform: rotateZ(-45deg);
+}
