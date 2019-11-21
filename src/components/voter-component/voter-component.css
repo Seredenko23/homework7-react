@@ -1,0 +1,27 @@
+.voter {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.vote-btn {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 1.6em;
+	text-align: center;
+	background-color: #f5f5f5;
+	text-decoration: none;
+}
+
+.vote-btn:hover {
+	transition: .2s ease-out;
+	background-color: #ebebeb;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.voteCounts {
+	font-size: 2em;
+	margin: 0 10px;
+}
