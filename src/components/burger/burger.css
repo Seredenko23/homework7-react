@@ -3,30 +3,56 @@
 	float: left;
 	height: 100%;
 	width: 300px;
-	background-color: #312d75 
+	background-color: #312d75;
+	transition: .3s ease-out;
 }
 
-.cross {
+.burger {
+	top: 25px;
+	left: 25px;
 	position: absolute;
-	display: inline-block;
-	top: 20px;
-	right: 40px;
-}
-
-.cross::after, .cross::before {
-	content: '';
-	position: absolute;
+	width: 40px;
 	height: 5px;
-	width: 20px;
 	background-color: #2a2852;
-	border-radius: 5px;
-	
 }
 
-.cross::after {
-	transform: rotateZ(45deg);
+.menu .burger,.menu .burger::after,.menu .burger::before {
+	background-color: white;
 }
 
-.cross::before {
-	transform: rotateZ(-45deg);
+.burger:hover {
+	background-color: transparent;
+	transition: .2s ease; 
+}
+
+.burger::after, .burger::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 40px;
+	height: 5px;
+	background-color: #2a2852;
+	transition: .2s ease;
+}
+
+.burger::after {
+	transform: translateY(-8px);
+}
+
+.burger::before {
+	transform: translateY(8px);
+}
+
+.burger:hover::before {
+  transform:rotate(45deg);
+}
+
+.burger:hover::after {
+  transform:rotate(-45deg);
+}
+
+.contentWrapper {
+	padding: 50px 20px;
+	color: white;
+
 }
